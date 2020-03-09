@@ -1,0 +1,63 @@
+/*! ---------- Buttons ---------- !*/
+// --------------basic button-------------- 
+.btn {
+    padding: 15px 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+// --------------button borders-------------- 
+
+.btn-sharp {
+    border-radius: $border-sharp;
+}
+
+.btn-round {
+    border-radius: $border-round;
+}
+
+// --------------button presets-------------- 
+
+.btn-dark {
+    @include button-preset($dark-gray, $white)
+}
+
+.btn-light {
+    @include button-preset($white, $dark-gray)
+}
+
+.btn-1 {
+    @include button-preset($violet, $white)
+}
+
+// --------------button outline presets-------------- 
+
+.btn-outline-light {
+    @include button-outline-preset($white, $dark-gray)
+}
+
+.btn-outline-dark {
+    @include button-outline-preset($dark-gray, $white)
+}
+
+.btn-outline-1 {
+    @include button-outline-preset($violet, $white)
+}
+
+// --------------button sizes-------------- 
+
+@each $size, $padding in $button-size {
+        .btn-#{$size} {
+            padding: $padding;
+        }
+}
+@each $size, $font-size in $font-size {
+    
+        .btn-#{$size} {
+            font-size: $font-size;
+        }
+}

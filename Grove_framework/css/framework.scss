@@ -1,0 +1,97 @@
+@import './variables';
+@import './colors';
+@import './reset';
+@import './fonts';
+@import './mixins';
+@import './grid';
+@import './spacing';
+@import './navbar';
+@import './containers';
+@import './cards';
+@import './footer';
+@import './forms';
+@import './buttons';
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.hr-1 {
+    width: 60%;
+    background-color: $gray;
+}
+
+.hr-2 {
+    width: 100%;
+}
+
+/*! ---------- Code ---------- !*/
+
+code {
+    padding: .1rem .4rem;
+    margin: 0 .2rem;
+    font-size: 80%;
+    white-space: nowrap;
+    background: $dark-blue;
+    border-radius: $border-rounded;
+    font-family: roboto mono;
+    overflow-x: scroll;
+    color: $white;
+    line-height: 1.2rem;
+    
+ }
+  pre > code {
+    display: block;
+    padding: 1rem 1.5rem;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    box-shadow: inset 0px 0px 10px 0px #000000;
+    font-size: 90%; 
+}
+
+/*! ---------- Tables ---------- !*/
+    
+
+.table-light{
+    & td, & th {
+        color: white;
+        padding: 10px 20px;
+        text-align: left;
+        border-bottom: 1px solid rgb(202, 202, 202);
+    }
+
+    & th {
+        background-color: rgb(70, 70, 70);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+}
+
+.table-dark{
+    & td, & th {
+        color: $dark-gray;
+        padding: 10px 20px;
+        text-align: left;
+        border-bottom: 1px solid $dark-gray;
+    }
+
+    & th {
+        background-color: rgb(202, 202, 202);
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+}
+
+
+
+
+
+
+
+
